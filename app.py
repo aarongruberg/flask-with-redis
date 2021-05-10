@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Added redis database connection test
 try:
     conn = redis.StrictRedis(
-        host='https://redis.io',
+        host='redis-test-kris',
         port=10000)
         #password='YOUR_PASSWORD')
     print(conn)
