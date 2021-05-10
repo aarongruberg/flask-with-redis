@@ -9,7 +9,7 @@ app = Flask(__name__)
 try:
     conn = redis.StrictRedis(
         host='https://redis.io',
-        port=10000,
+        port=10000)
         #password='YOUR_PASSWORD')
     print(conn)
     conn.ping()
