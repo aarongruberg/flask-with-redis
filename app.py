@@ -11,11 +11,11 @@ try:
         host='https://redis.io',
         port=10000,
         #password='YOUR_PASSWORD')
-    print conn
+    print(conn)
     conn.ping()
-    print 'Connected!'
+    print('Connected!')
 except Exception as ex:
-    print 'Error:', ex
+    print('Error:', ex)
     exit('Failed to connect, terminating.')
 
 
