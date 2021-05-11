@@ -1,25 +1,27 @@
 
 # Added imports for redis
 from flask import Flask, render_template
-import redis
+#import redis
 
 app = Flask(__name__)
 
 # Added redis database connection test
-try:
-    conn = redis.StrictRedis(
-        host='redis-test-kris',
-        port=10000)
-        #password='YOUR_PASSWORD')
+# try:
+#     conn = redis.StrictRedis(
+#         host='redis-test-kris',
+#         port=10000)
+#         #password='YOUR_PASSWORD')
+#
+#     #print(conn)
+#     app.logger.info('connecting')
+#     app.logger.info(conn)
+#     conn.ping()
+#     print('Connected!')
+# except Exception as ex:
+#     print('Error:', ex)
+#     exit('Failed to connect, terminating.')
 
-    #print(conn)
-    app.logger.info('connecting')
-    app.logger.info(conn)
-    conn.ping()
-    print('Connected!')
-except Exception as ex:
-    print('Error:', ex)
-    exit('Failed to connect, terminating.')
+raise Exception('Oops')
 
 
 @app.route('/')
