@@ -15,9 +15,9 @@ try:
         port=10000)
         #password='YOUR_PASSWORD')
 
-    #print(conn)
-    app.logger.info('connecting')
-    app.logger.info(conn)
+    print(conn)
+    #app.logger.info('connecting')
+    #app.logger.info(conn)
     conn.ping()
     print('Connected!')
 except Exception as ex:
