@@ -25,3 +25,6 @@ except Exception as ex:
 @app.route('/')
 def index():
     return render_template('index.html')
+
+# testing this function
+app.run()
